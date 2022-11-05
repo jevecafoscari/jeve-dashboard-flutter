@@ -19,6 +19,7 @@ dependencies:
 
   # Grafica
   cupertino_icons: ^1.0.5
+  swatcher: ^0.1.0
 
 dev_dependencies:
   flutter_test:
