@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jeve_dashboard_flutter/references.dart';
+import 'package:jeve_dashboard_flutter/assets.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String route = "/splashScreen";
@@ -19,10 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
-            References.appName,
-            style: Theme.of(context).textTheme.headline3?.copyWith(color: Theme.of(context).primaryColor),
-          ),
+          FractionallySizedBox(widthFactor: 1 / 3, child: Image(image: Images.logo)),
           SizedBox(height: 16.0),
           CircularProgressIndicator(),
         ],
